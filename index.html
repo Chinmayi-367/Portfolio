@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Chinmayi M M - Full-Stack Software Engineer & Systems Architect.">
+  <meta name="author" content="Chinmayi M M">
+  <meta name="theme-color" content="#4f46e5">
+  <title>Chinmayi M M | Portfolio</title>
+
+  <!-- Modern Typography (Plus Jakarta Sans & JetBrains Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       ACCESSIBILITY: SKIP LINK
+       ========================================================================= -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- =========================================================================
+       VERTICAL NAVIGATION BAR (LEFT SIDE OF SCREEN)
+       ========================================================================= -->
+  <aside id="sidebar-nav" class="modern-sidebar" aria-label="Main Sidebar Navigation">
+    <div class="sidebar-inner">
+
+      <!-- Profile Header -->
+      <div class="sidebar-profile">
+        <div class="sidebar-avatar-wrap">
+          <img src="PROFESSIONAL PICTURE.jpeg" alt="Chinmayi M M" class="sidebar-avatar">
+          <span class="status-indicator" title="Available for opportunities" aria-hidden="true"></span>
+        </div>
+        <div class="sidebar-info">
+          <a href="#hero" class="sidebar-name">Chinmayi M M</a>
+          <span class="sidebar-role">Software Engineer</span>
+        </div>
+      </div>
+
+      <!-- Navigation Links Container -->
+      <nav class="sidebar-nav-container" aria-label="Primary Navigation">
+        <ul class="sidebar-nav-list">
+          <li class="sidebar-nav-item">
+            <a href="#hero" class="sidebar-link active" data-nav-target="hero">
+              <span class="sidebar-link-icon" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                </svg>
+              </span>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#about" class="sidebar-link" data-nav-target="about">
+              <span class="sidebar-link-icon" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                </svg>
+              </span>
+              <span>About Me</span>
+            </a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#skills" class="sidebar-link" data-nav-target="skills">
+              <span class="sidebar-link-icon" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                </svg>
+              </span>
+              <span>Skills</span>
+            </a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#timeline" class="sidebar-link" data-nav-target="timeline">
+              <span class="sidebar-link-icon" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </span>
+              <span>Timeline</span>
+            </a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#projects" class="sidebar-link" data-nav-target="projects">
+              <span class="sidebar-link-icon" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                </svg>
+              </span>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#testimonials" class="sidebar-link" data-nav-target="testimonials">
+              <span class="sidebar-link-icon" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                </svg>
+              </span>
+              <span>Testimonials</span>
+            </a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#chat" class="sidebar-link" data-nav-target="chat">
+              <span class="sidebar-link-icon" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                </svg>
+              </span>
+              <span>Chat</span>
+            </a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#contact" class="sidebar-link" data-nav-target="contact">
+              <span class="sidebar-link-icon" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+              </span>
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Sidebar Footer (Theme Toggle) -->
+      <div class="sidebar-footer">
+        <button 
+          id="sidebar-theme-toggle" 
+          class="theme-toggle-modern" 
+          type="button" 
+          aria-label="Toggle Night Mode" 
+          title="Toggle Night Mode"
+        >
+          <span>Appearance</span>
+          <span class="theme-toggle-switch">
+            <span class="theme-toggle-label">Auto</span>
+          </span>
+        </button>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- Mobile Backdrop -->
+  <div id="sidebar-backdrop" class="sidebar-backdrop" aria-hidden="true"></div>
+
+  <!-- Mobile Header (Visible on screens < 1024px) -->
+  <header id="mobile-header" class="mobile-header" aria-label="Mobile Navigation Bar">
+    <button 
+      id="mobile-menu-toggle" 
+      class="mobile-menu-btn" 
+      type="button" 
+      aria-expanded="false" 
+      aria-controls="sidebar-nav" 
+      aria-label="Open Navigation Menu"
+    >
+      <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+      <span>Menu</span>
+    </button>
+
+    <a href="#hero" class="mobile-brand">Chinmayi M M</a>
+
+    <button 
+      id="mobile-theme-toggle" 
+      class="mobile-menu-btn" 
+      type="button" 
+      aria-label="Toggle Theme"
+      title="Toggle Theme"
+    >
+      <span class="theme-toggle-label">🌙</span>
+    </button>
+  </header>
+
+  <!-- =========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================= -->
+  <main id="main-content">
+
+    <!-- =======================================================================
+         HERO SECTION (MODERN SPLIT DESIGN + BACKGROUND PICTURE)
+         ======================================================================= -->
+    <section id="hero" class="hero-section" aria-labelledby="hero-title">
+      <div class="hero-backdrop-tint" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        <div class="hero-grid">
+
+          <!-- Left: Hero Text & Actions -->
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              <span>Available for New Opportunities</span>
+            </div>
+
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 id="hero-title" class="hero-title">
+              Chinmayi <span class="gradient-text">M M</span>
+            </h1>
+
+            <h2 class="hero-subtitle">
+              Full-Stack Software Engineer &amp; Systems Architect
+            </h2>
+
+            <p class="hero-tagline">
+              Designing scalable backend architectures, high-performance distributed systems, and modern, intuitive user interfaces with precision and clean code.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">View My Work</a>
+              <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+              <a href="RESUME .pdf" class="btn btn-outline" download>Download CV</a>
+            </div>
+          </div>
+
+          <!-- Right: Hero Image Card -->
+          <div class="hero-visual">
+            <div class="hero-image-card">
+              <img 
+                src="PROFESSIONAL PICTURE.jpeg" 
+                alt="Portrait of Chinmayi M M" 
+                class="hero-image"
+                width="400"
+                height="533"
+              >
+              <div class="hero-floating-badge">
+                <div class="floating-badge-item">
+                  <span class="floating-badge-val">5+</span>
+                  <span class="floating-badge-lbl">Years Experience</span>
+                </div>
+                <div class="floating-badge-item">
+                  <span class="floating-badge-val">20+</span>
+                  <span class="floating-badge-lbl">Projects Built</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         ABOUT ME SECTION (CLEAN & MINIMALISTIC)
+         ======================================================================= -->
+    <section id="about" class="about-section" aria-labelledby="about-title">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-eyebrow">Biography</span>
+          <h2 id="about-title" class="section-title">About Me</h2>
+          <p class="section-description">
+            Passionate about building software that scales seamlessly, solves real problems, and delivers elegant user experiences.
+          </p>
+        </header>
+
+        <div class="about-grid">
+
+          <!-- Left Column: Profile Card & Video Intro -->
+          <div class="about-left-col">
+            
+            <div class="profile-card">
+              <div class="profile-img-wrap">
+                <img 
+                  src="PROFESSIONAL PICTURE.jpeg" 
+                  alt="Chinmayi M M profile" 
+                  class="profile-photo"
+                  width="140"
+                  height="140"
+                >
+              </div>
+
+              <div>
+                <h3 class="profile-name">Chinmayi M M</h3>
+                <p class="profile-tagline">Software Engineer &amp; Builder</p>
+              </div>
+
+              <ul class="profile-quick-facts">
+                <li class="profile-fact-item">
+                  <span class="fact-icon">📍</span>
+                  <span>Bengaluru, India &bull; Open to Relocation/Remote</span>
+                </li>
+                <li class="profile-fact-item">
+                  <span class="fact-icon">🎓</span>
+                  <span>B.E. at Adichunchanagiri Inst. of Tech (CGPA: 8.2)</span>
+                </li>
+                <li class="profile-fact-item">
+                  <span class="fact-icon">💼</span>
+                  <span>Java, C, Python, MySQL, IoT &amp; Web</span>
+                </li>
+                <li class="profile-fact-item">
+                  <span class="fact-icon">⚡</span>
+                  <span>Problem Solving &bull; Analytical Thinking</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Video Introduction Card -->
+            <div class="video-preview-card">
+              <div class="video-card-header">
+                <span>📹</span>
+                <span>Video Introduction</span>
+              </div>
+              <video 
+                controls 
+                preload="metadata" 
+                poster="BACKGROUND PICTURE.jpg" 
+                class="about-intro-video"
+              >
+                <source src="INTRODUCTION VIDEO .mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Narrative Bio, Highlights, and Interests -->
+          <div class="about-right-col">
+            
+            <!-- Narrative Bio -->
+            <div class="about-narrative">
+              <p class="about-lead">
+                I am a computer science engineering student and software builder with a passion for software development, data structures, and IoT-driven solutions.
+              </p>
+              <p>
+                Currently pursuing my Bachelor of Engineering (B.E.) at Adichunchanagiri Institute of Technology with an 8.2 CGPA, I focus on applying core engineering principles—Object-Oriented Programming (OOP), Data Structures, and algorithmic thinking—to real-world applications. My work spans from building smart IoT sensor prototypes like <strong>CropShield AI</strong> to developing embedded hardware dashboards and researching fintech systems.
+              </p>
+              <p>
+                Known for my analytical problem-solving, strong communication, and teamwork, I am eager to contribute to innovative software engineering teams and scalable technology initiatives.
+              </p>
+            </div>
+
+            <!-- Career Highlights Cards -->
+            <div>
+              <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 16px; color: var(--text-main);">
+                Technical Highlights &amp; Core Strengths
+              </h3>
+              <div class="highlights-grid">
+                
+                <div class="highlight-card">
+                  <div class="highlight-header">
+                    <span class="highlight-icon">🌱</span>
+                    <h4 class="highlight-title">AI &amp; Sensor Analytics</h4>
+                  </div>
+                  <p class="highlight-description">
+                    Built the CropShield AI prototype for real-time monitoring of soil and environmental conditions using sensor arrays and satellite data.
+                  </p>
+                </div>
+
+                <div class="highlight-card">
+                  <div class="highlight-header">
+                    <span class="highlight-icon">🚗</span>
+                    <h4 class="highlight-title">IoT &amp; Embedded Systems</h4>
+                  </div>
+                  <p class="highlight-description">
+                    Engineered hardware sensor integrations using Arduino and ESP32 with connected web dashboards for automated parking space detection.
+                  </p>
+                </div>
+
+                <div class="highlight-card">
+                  <div class="highlight-header">
+                    <span class="highlight-icon">💻</span>
+                    <h4 class="highlight-title">Core Programming</h4>
+                  </div>
+                  <p class="highlight-description">
+                    Strong command over Java, C, Python, Object-Oriented Programming principles, and Data Structures for clean, modular software.
+                  </p>
+                </div>
+
+                <div class="highlight-card">
+                  <div class="highlight-header">
+                    <span class="highlight-icon">📊</span>
+                    <h4 class="highlight-title">Databases &amp; Research</h4>
+                  </div>
+                  <p class="highlight-description">
+                    Experienced with relational database design in MySQL, web technologies, and systems analysis evaluating customer friction in banking.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Personal Interests -->
+            <div>
+              <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 16px; color: var(--text-main);">
+                Personal Interests &amp; Values
+              </h3>
+              <div class="highlights-grid">
+                
+                <div class="highlight-card">
+                  <div class="highlight-header">
+                    <span class="highlight-icon">📚</span>
+                    <h4 class="highlight-title">Systems Research</h4>
+                  </div>
+                  <p class="highlight-description">
+                    Diving into distributed consensus, concurrent data structures, and reading software engineering papers.
+                  </p>
+                </div>
+
+                <div class="highlight-card">
+                  <div class="highlight-header">
+                    <span class="highlight-icon">🤝</span>
+                    <h4 class="highlight-title">Mentorship &amp; OSS</h4>
+                  </div>
+                  <p class="highlight-description">
+                    Sharing knowledge through technical blogs, code reviews, and contributing to open-source developer tooling.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Impact Statistics Row -->
+            <div class="about-stats-row">
+              <div class="about-stat">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="about-stat">
+                <span class="stat-number">20+</span>
+                <span class="stat-label">Shipped Projects</span>
+              </div>
+              <div class="about-stat">
+                <span class="stat-number">99.9%</span>
+                <span class="stat-label">Uptime Delivered</span>
+              </div>
+              <div class="about-stat">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Commitment</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SKILLS SECTION (FROM RESUME)
+         ======================================================================= -->
+    <section id="skills" class="skills-section" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">Technical Competencies</span>
+          <h2 id="skills-title" class="section-title">Skills &amp; Expertise</h2>
+          <p class="section-description">A structured breakdown of programming languages, core concepts, web technologies, and specialized tools from my technical repertoire.</p>
+        </header>
+
+        <div class="skills-grid">
+          
+          <!-- Programming Languages -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <span class="skill-category-icon" aria-hidden="true">💻</span>
+              <h3 class="skill-category-title">Programming Languages</h3>
+            </div>
+            <ul class="skill-tags">
+              <li class="skill-tag">Java</li>
+              <li class="skill-tag">C</li>
+              <li class="skill-tag">Python</li>
+            </ul>
+          </div>
+
+          <!-- Core Concepts -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <span class="skill-category-icon" aria-hidden="true">🧠</span>
+              <h3 class="skill-category-title">Core Computer Science</h3>
+            </div>
+            <ul class="skill-tags">
+              <li class="skill-tag">Object-Oriented Programming (OOP)</li>
+              <li class="skill-tag">Data Structures</li>
+            </ul>
+          </div>
+
+          <!-- Web Technologies & Databases -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <span class="skill-category-icon" aria-hidden="true">🌐</span>
+              <h3 class="skill-category-title">Web &amp; Databases</h3>
+            </div>
+            <ul class="skill-tags">
+              <li class="skill-tag">HTML</li>
+              <li class="skill-tag">CSS</li>
+              <li class="skill-tag">JavaScript</li>
+              <li class="skill-tag">MySQL</li>
+            </ul>
+          </div>
+
+          <!-- Tools & Platforms -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <span class="skill-category-icon" aria-hidden="true">🛠️</span>
+              <h3 class="skill-category-title">Developer Tools</h3>
+            </div>
+            <ul class="skill-tags">
+              <li class="skill-tag">Git</li>
+              <li class="skill-tag">GitHub</li>
+              <li class="skill-tag">Git Bash</li>
+            </ul>
+          </div>
+
+          <!-- Emerging & Specialized Technologies -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <span class="skill-category-icon" aria-hidden="true">🛰️</span>
+              <h3 class="skill-category-title">Specialized Technologies</h3>
+            </div>
+            <ul class="skill-tags">
+              <li class="skill-tag">AI Agents</li>
+              <li class="skill-tag">GIS (Geographic Information Systems)</li>
+              <li class="skill-tag">Satellite Data</li>
+            </ul>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <span class="skill-category-icon" aria-hidden="true">🤝</span>
+              <h3 class="skill-category-title">Professional Strengths</h3>
+            </div>
+            <ul class="skill-tags">
+              <li class="skill-tag">Problem Solving</li>
+              <li class="skill-tag">Analytical Thinking</li>
+              <li class="skill-tag">Leadership</li>
+              <li class="skill-tag">Teamwork</li>
+              <li class="skill-tag">Communication</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         TIMELINE / EDUCATION SECTION (FROM RESUME)
+         ======================================================================= -->
+    <section id="timeline" class="timeline-section" aria-labelledby="timeline-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">Academic Background</span>
+          <h2 id="timeline-title" class="section-title">Education &amp; Milestones</h2>
+        </header>
+
+        <div class="timeline-list">
+          
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">2025 – 2029</span>
+              <h3 class="timeline-role">Bachelor of Engineering (B.E.)</h3>
+              <p class="timeline-company">Adichunchanagiri Institute of Technology &bull; CGPA: 8.2 / 10</p>
+              <p class="timeline-description">
+                Undergraduate engineering studies focusing on foundational Computer Science principles, Data Structures, OOP, and Database Systems.
+              </p>
+              <ul class="timeline-tags">
+                <li>Data Structures</li>
+                <li>OOP</li>
+                <li>Java</li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">2024</span>
+              <h3 class="timeline-role">2nd PUC (Pre-University Course)</h3>
+              <p class="timeline-company">RP Residential PU College &bull; Percentage: 74%</p>
+              <p class="timeline-description">
+                Completed pre-university education with strong grounding in mathematics and analytical sciences.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">2023</span>
+              <h3 class="timeline-role">SSLC / 10th Standard (ICSE)</h3>
+              <p class="timeline-company">Prajna Central School &bull; Percentage: 85%</p>
+              <p class="timeline-description">
+                Secondary school education completed under the Indian Certificate of Secondary Education (ICSE) curriculum.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         PROJECTS SECTION (FROM RESUME)
+         ======================================================================= -->
+    <section id="projects" class="projects-section" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">Portfolio Showcase</span>
+          <h2 id="projects-title" class="section-title">Featured Projects</h2>
+          <p class="section-description">Hands-on engineering projects spanning AI agriculture, IoT smart city infrastructure, and banking systems analysis.</p>
+        </header>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: CropShield AI -->
+          <article class="project-card">
+            <div class="project-header-banner" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.16), rgba(6, 182, 212, 0.16));">
+              <span class="project-category-badge">🌱 AI &amp; AgTech</span>
+              <div class="project-icon-large" aria-hidden="true">🌾</div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-name">CropShield AI</h3>
+              <ul class="project-points-list">
+                <li>Developed a working prototype for monitoring soil moisture, soil temperature, and environmental conditions.</li>
+                <li>Used sensor-based monitoring to collect and analyze real-time environmental information.</li>
+                <li>Designed the system to provide useful and actionable insights for better crop health and agricultural management.</li>
+              </ul>
+              <ul class="project-tech-stack">
+                <li>Python</li>
+                <li>AI Agents</li>
+                <li>IoT Sensors</li>
+                <li>GIS</li>
+                <li>Satellite Data</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/Chinmayi-367" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Smart Parking System -->
+          <article class="project-card">
+            <div class="project-header-banner" style="background: linear-gradient(135deg, rgba(79, 70, 229, 0.16), rgba(56, 189, 248, 0.16));">
+              <span class="project-category-badge">🚗 IoT &amp; Smart City</span>
+              <div class="project-icon-large" aria-hidden="true">🅿️</div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-name">Smart Parking System</h3>
+              <ul class="project-points-list">
+                <li>Developed a smart parking system to detect available and occupied parking spaces in real-time.</li>
+                <li>Integrated hardware sensors with Arduino / ESP32 to monitor parking-slot availability automatically.</li>
+                <li>Designed an intuitive web/mobile dashboard to display real-time availability and assist users in finding vacant spots quickly.</li>
+              </ul>
+              <ul class="project-tech-stack">
+                <li>Arduino / ESP32</li>
+                <li>C / Python</li>
+                <li>HTML / CSS</li>
+                <li>JavaScript</li>
+                <li>MySQL</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/Chinmayi-367" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Problems Faced by Banks -->
+          <article class="project-card">
+            <div class="project-header-banner" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.16), rgba(239, 68, 68, 0.16));">
+              <span class="project-category-badge">🏦 FinTech &amp; Systems Research</span>
+              <div class="project-icon-large" aria-hidden="true">🏛️</div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-name">Problems Faced by Banks</h3>
+              <ul class="project-points-list">
+                <li>Researched common challenges and friction points faced by banking institutions and their retail customers.</li>
+                <li>Identified critical issues related to digital accessibility, ATM network services, communication channels, and customer support.</li>
+                <li>Proposed practical, tech-driven solutions to improve banking service delivery, workflows, and overall customer experience.</li>
+              </ul>
+              <ul class="project-tech-stack">
+                <li>Systems Analysis</li>
+                <li>Accessibility (UX)</li>
+                <li>Customer Experience</li>
+                <li>Process Engineering</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/Chinmayi-367" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         TESTIMONIALS SECTION
+         ======================================================================= -->
+    <section id="testimonials" class="testimonials-section" aria-labelledby="testimonials-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">Recommendations</span>
+          <h2 id="testimonials-title" class="section-title">Testimonials</h2>
+          <p class="section-description">What engineering leads and colleagues say about working with me.</p>
+        </header>
+
+        <div class="testimonials-grid">
+          
+          <article class="testimonial-card">
+            <div class="testimonial-header">
+              <span class="reviewer-avatar">👨‍💻</span>
+              <div>
+                <h3 class="reviewer-name">Alex Rivera</h3>
+                <p class="reviewer-role">Engineering Lead, CloudScale</p>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "Chinmayi is an exceptional software engineer who approaches architectural hurdles with relentless problem-solving and attention to detail."
+            </p>
+            <div class="testimonial-rating">
+              <span>⭐⭐⭐⭐⭐</span>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-header">
+              <span class="reviewer-avatar">👩‍💼</span>
+              <div>
+                <h3 class="reviewer-name">Samantha Chen</h3>
+                <p class="reviewer-role">Principal Architect, Tech Innovations</p>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "Her ability to build robust, distributed backend microservices while delivering intuitive frontends made her a cornerstone of our development squad."
+            </p>
+            <div class="testimonial-rating">
+              <span>⭐⭐⭐⭐⭐</span>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-header">
+              <span class="reviewer-avatar">👨‍💼</span>
+              <div>
+                <h3 class="reviewer-name">Marcus Vance</h3>
+                <p class="reviewer-role">Senior Product Manager</p>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "Fast learner, incredible communicator, and ships clean code on time. Any high-velocity engineering team would be lucky to have Chinmayi."
+            </p>
+            <div class="testimonial-rating">
+              <span>⭐⭐⭐⭐⭐</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         CHAT SECTION
+         ======================================================================= -->
+    <section id="chat" class="chat-section" aria-labelledby="chat-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">Interactive Inquiries</span>
+          <h2 id="chat-title" class="section-title">Chat Assistant</h2>
+          <p class="section-description">Ask quick questions about my background, technical stack, or availability.</p>
+        </header>
+
+        <div class="chat-terminal-box">
+          <div class="chat-terminal-top">
+            <div class="terminal-dots" aria-hidden="true">
+              <span class="dot red-dot"></span>
+              <span class="dot yellow-dot"></span>
+              <span class="dot green-dot"></span>
+            </div>
+            <span class="terminal-title">Portfolio Assistant &bull; Online</span>
+          </div>
+
+          <div class="chat-messages" id="chat-messages">
+            <div class="chat-msg bot-msg">
+              <span class="chat-sender">Assistant:</span>
+              <p>Hello! Welcome to Chinmayi's portfolio. How can I help you today?</p>
+            </div>
+            <div class="chat-msg bot-msg">
+              <span class="chat-sender">Assistant:</span>
+              <p>Feel free to ask about technical skills, project experiences, or send a message through the contact form below.</p>
+            </div>
+          </div>
+
+          <form class="chat-input-bar" id="chat-form">
+            <input 
+              type="text" 
+              id="chat-input" 
+              class="chat-text-input" 
+              placeholder="Ask a question (e.g. 'What is your primary tech stack?')..." 
+              aria-label="Type message in chat terminal"
+              autocomplete="off"
+            >
+            <button type="submit" class="btn btn-primary" style="padding: 10px 18px; font-size: 0.88rem;">
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         CONTACT SECTION
+         ======================================================================= -->
+    <section id="contact" class="contact-section" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">Get In Touch</span>
+          <h2 id="contact-title" class="section-title">Contact &amp; Inquiries</h2>
+          <p class="section-description">Have a project in mind or want to explore collaboration opportunities? Let's connect.</p>
+        </header>
+
+        <div class="contact-container">
+          
+          <div class="contact-info">
+            <p class="contact-message">
+              I am always interested in discussing new engineering challenges, distributed architecture design, or full-time opportunities. Feel free to reach out directly!
+            </p>
+            <ul class="contact-links-list">
+              <li>
+                <strong>Email:</strong> 
+                <a href="mailto:chinmayimallikarjunn@gmail.com">chinmayimallikarjunn@gmail.com</a>
+              </li>
+              <li>
+                <strong>Phone:</strong> 
+                <a href="tel:9880808398">+91 9880808398</a>
+              </li>
+              <li>
+                <strong>LinkedIn:</strong> 
+                <a href="https://linkedin.com/in/chinmayi-m-3671aa39b" target="_blank" rel="noopener noreferrer">linkedin.com/in/chinmayi-m-3671aa39b</a>
+              </li>
+              <li>
+                <strong>GitHub:</strong> 
+                <a href="https://github.com/Chinmayi-367" target="_blank" rel="noopener noreferrer">github.com/Chinmayi-367</a>
+              </li>
+              <li>
+                <strong>Location:</strong> 
+                <span>Bengaluru, India / Remote</span>
+              </li>
+            </ul>
+          </div>
+
+          <form id="contact-form" class="contact-form" action="#" method="POST">
+            <div class="form-group">
+              <label for="contact-name">Your Name</label>
+              <input type="text" id="contact-name" name="name" required placeholder="Jane Doe">
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" name="email" required placeholder="jane@example.com">
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" name="subject" required placeholder="Project Inquiry / Job Opportunity">
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" rows="4" required placeholder="Tell me about your project or role..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       SITE FOOTER
+       ========================================================================= -->
+  <footer id="site-footer" class="site-footer">
+    <div class="container footer-container">
+      <p class="footer-copyright">
+        &copy; 2026 Chinmayi M M. All rights reserved.
+      </p>
+
+      <nav class="footer-social-nav" aria-label="Social Media Links">
+        <ul class="footer-social-list">
+          <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="#hero" class="back-to-top-link">Back to top &uarr;</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Application Script -->
+  <script src="script.js"></script>
+
+</body>
+</html>
